@@ -1,0 +1,36 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "buildCommand": "yarn build:prod",
+          "outputDirectory": "dist"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/openmrs/(.*)",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "img-src 'self' data: https://pbs.twimg.com"
+          }
+        ]
+      }
+    ],
+    "env": {
+      "GENERATE_SOURCEMAP": "false"
+    }
+  }

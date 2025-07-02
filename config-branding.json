@@ -1,0 +1,19 @@
+{
+    "@openmrs/esm-primary-navigation-app": {
+      "logo": {
+        "src": "https://pbs.twimg.com/profile_images/1775194896586117120/_bwDwJl2_400x400.jpg",
+        "alt": "CX3 Hope Foundation"
+      }
+    },
+    "@openmrs/esm-login-app": {
+      "logo": {
+        "src": "https://pbs.twimg.com/profile_images/1775194896586117120/_bwDwJl2_400x400.jpg",
+        "alt": "CX3 Hope Foundation"
+      }
+    },
+    "@openmrs/esm-styleguide": {
+      "Brand color #1": "#006EA9",
+      "Brand color #2": "#005A87", 
+      "Brand color #3": "#EF4444"
+    }
+  }
